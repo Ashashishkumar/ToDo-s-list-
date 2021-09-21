@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Ashish"></div>
+    <br>
+
+    <form class="" action="/" method="post">
+        <label  class="label">Type your ToDo's</label>
+        <input type="text" id="textInput " name="newItem" aria-describedby="Todo's">
+        
+     
+      <button id="submit" type="submit" onclick="my()" class="btn btn-primary">Add Todo</button>
+    </form>
+
+    <div id="todo"> </div>
+  
+    <script>
+        var a=new Date()
+        var textto=[];
+        var text;
+        
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var day=a.toLocaleDateString(undefined, options);
+        document.getElementById("Ashish").innerHTML=day;
+
+
+        function my(){
+         var b= document.getElementById("textInput").value;
+           
+           document.getElementById("todo").innerHTML=b;
+        }
+
+        
+                
+            
+
+    </script>
+
+</body>
+
+</html
